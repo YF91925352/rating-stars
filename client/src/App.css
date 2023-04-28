@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.container {
+  margin-top: 10rem;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #f3dcbb;
+}
+.rating-box {
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.star-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1.8rem;
+  border-radius: 50%;
+  background-color: hsl(220, 15%, 55%);
+}
+.star-logo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.title-para {
+  margin-left: 1rem;
+}
+
+p:nth-child(1) {
+  font-weight: 700;
+  font-family: ExtraLight 200;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  text-align: left;
+}
+p:nth-child(2) {
+  font-weight: 400;
+  font-family: Thin 100;
+  color: hsl(212, 45%, 89%);
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.rating-number-box {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.rating-number {
+  color: #5f6672;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(220, 15%, 55%);
+  border-radius: 50%;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+.rating-number:hover {
+  background-color: hsl(35, 79%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+input {
+  display: none;
+}
+button {
+  color: azure;
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: hsl(35, 79%, 54%);
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+button:hover {
+  color: hsl(35, 79%, 54%);
+  background-color: white;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-color: #bbe4a3;
+  }
+
+  .rating-box {
+    width: 20rem;
+    height: 20rem;
+    background-color: hsl(218, 44%, 22%);
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-color: #cf8abd;
+  }
+  .rating-box {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: hsl(218, 44%, 22%);
+  }
+}
