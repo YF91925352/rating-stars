@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+
+import EachRating from "./EachRating";
 export default function StarRating() {
-  const [rating, setRating] = useState(0);
-  console.log(rating);
   return (
     <div className="container">
       <div className="rating-box">
@@ -18,29 +17,12 @@ export default function StarRating() {
         </div>
 
         <div className="rating-number-box">
-          {[1, 2, 3, 4, 5].map((num) => {
-            return (
-              <label key={num}>
-                <input
-                  type="radio"
-                  name="rating"
-                  id="rating"
-                  value={num}
-                  onClick={() => setRating(num)}
-                />
-                <div className="rating-number">{num}</div>
-              </label>
-            );
-          })}
+          {[1, 2, 3, 4, 5].map((num) => (
+            <EachRating num={num} />
+          ))}
         </div>
-        <Link to={`/`}>
-          <button
-            type="button"
-            className="submit-button"
-            onClick={() => {
-              console.log(1);
-            }}
-          >
+        <Link to={`/submitted`}>
+          <button type="button" className="submit-button">
             Submit
           </button>
         </Link>

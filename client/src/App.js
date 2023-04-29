@@ -1,17 +1,14 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StarRating from "./Components/StarRating";
+import Submitted from "./Components/Submitted";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<StarRating />}>
-            {/* <Route index element={<Home />} />
-            <Route path="blogs" element={<Blogs />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} /> */}
-          </Route>
+          <Route path="/" element={<StarRating />} />
+          <Route path="submitted" element={<Submitted />} />
         </Routes>
       </BrowserRouter>
     </>
