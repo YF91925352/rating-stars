@@ -5,11 +5,12 @@
   height: 80%;
   display: flex;
   justify-content: center;
-  background-color: #f3dcbb;
+  background-color: black;
 }
 .rating-box {
   border-radius: 1.5rem;
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 .star-logo {
   width: 2.5rem;
@@ -30,14 +31,14 @@
   margin-left: 1rem;
 }
 
-p:nth-child(1) {
+.title-para p:nth-child(1) {
   font-weight: 700;
   font-family: ExtraLight 200;
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
   text-align: left;
 }
-p:nth-child(2) {
+.title-para p:nth-child(2) {
   font-weight: 400;
   font-family: Thin 100;
   color: hsl(212, 45%, 89%);
@@ -45,6 +46,23 @@ p:nth-child(2) {
   text-align: left;
   line-height: 1.5rem;
 }
+.title-para-submitted {
+  margin-top: 5%;
+}
+.title-para-submitted p:nth-child(1) {
+  font-weight: 700;
+  font-family: ExtraLight 200;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+}
+.title-para-submitted p:nth-child(2) {
+  font-weight: 400;
+  font-family: Thin 100;
+  color: hsl(212, 45%, 89%);
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
 .rating-number-box {
   font-size: 0.9rem;
   display: flex;
@@ -61,17 +79,39 @@ p:nth-child(2) {
   line-height: 2.5rem;
   cursor: pointer;
 }
+.rating-number-active {
+  color: hsl(0, 0%, 100%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(35, 79%, 54%);
+  border-radius: 50%;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
 .rating-number:hover {
   background-color: hsl(35, 79%, 54%);
   color: hsl(0, 0%, 100%);
+}
+.rating-result {
+  margin-top: 10%;
+  margin-left: 23%;
+  width: 55%;
+  height: 10%;
+  line-height: 1.8rem;
+  border-radius: 2rem;
+  background-color: #5f6672;
+  color: hsl(35, 79%, 54%);
+}
+.submitted-icon {
+  margin-top: 8%;
 }
 input {
   display: none;
 }
 button {
   color: azure;
-  width: 80%;
-  height: 2.5rem;
+  width: 90%;
+  height: 2rem;
   border-radius: 3rem;
   border: none;
   background-color: hsl(35, 79%, 54%);
@@ -85,7 +125,7 @@ button:hover {
 
 @media screen and (min-width: 375px) {
   body {
-    background-color: #bbe4a3;
+    background-color: black;
   }
 
   .rating-box {
@@ -94,9 +134,10 @@ button:hover {
     background-color: hsl(218, 44%, 22%);
   }
 }
+
 @media screen and (max-width: 375px) {
   body {
-    background-color: #cf8abd;
+    background-color: black;
   }
   .rating-box {
     margin-left: 0.8rem;
@@ -104,5 +145,17 @@ button:hover {
     width: 20rem;
     height: 20rem;
     background-color: hsl(218, 44%, 22%);
+  }
+}
+@media screen and (max-width: 335px) {
+  .rating-result {
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 70%;
+    height: 10%;
+    line-height: 1.8rem;
+    border-radius: 2rem;
+    background-color: #5f6672;
+    color: hsl(35, 79%, 54%);
   }
 }
