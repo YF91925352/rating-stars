@@ -8,6 +8,7 @@
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+<div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:56.11%;position:relative;"><iframe width="360" height="202" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/7k6m4x"></iframe></div><p><a href="https://imgflip.com/gif/7k6m4x">via Imgflip</a></p></div>
 
 **To do this challenge, you need a basic understanding of HTML, CSS and React.**
 
