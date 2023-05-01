@@ -17,8 +17,8 @@ export default function StarRating() {
         </div>
 
         <div className="rating-number-box">
-          {[1, 2, 3, 4, 5].map((num) => (
-            <EachRating num={num} />
+          {[1, 2, 3, 4, 5].map((num, index) => (
+            <EachRating num={num} index={index} key={num} />
           ))}
         </div>
         <Link to={`/submitted`}>

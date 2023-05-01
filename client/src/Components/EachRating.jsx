@@ -1,22 +1,22 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { RatingContext } from "./RatingProvider";
-export default function EachRating({ num }) {
+export default function EachRating({ num, index }) {
   const { rating, setRating } = useContext(RatingContext);
-  const [active, setActive] = useState(0);
-  console.log(rating);
   return (
     <label key={num}>
       <input
         type="radio"
         name="rating"
         id="rating"
-        value={num}
         onClick={() => {
           setRating(num);
-          setActive(1);
         }}
       />
-      <div className={active === 0 ? "rating-number" : "rating-number-active"}>
+      <div
+        className={
+          rating === index + 1 ? "rating-number-active" : "rating-number"
+        }
+      >
         {num}
       </div>
     </label>
