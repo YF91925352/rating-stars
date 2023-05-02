@@ -1,6 +1,6 @@
 # rating-stars
 # Frontend Mentor - Interactive rating component
-
+![ezgif com-crop (1)](https://user-images.githubusercontent.com/113684176/235665890-acec6331-c9a2-497c-8504-dedc2aabedb2.gif)
 
 
 ## Welcome! 👋
