@@ -1,10 +1,10 @@
 # rating-stars
 # Frontend Mentor - Interactive rating component
 
-![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
+![ezgif com-crop](https://user-images.githubusercontent.com/113684176/235655999-67242a07-8dc3-43aa-98c0-8a741b65dcab.gif)
 
 ## Welcome! 👋
-![ezgif com-crop](https://user-images.githubusercontent.com/113684176/235655999-67242a07-8dc3-43aa-98c0-8a741b65dcab.gif)
+
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
